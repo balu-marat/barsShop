@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Bold'), local('Lato-Bold'),
+      url('../fonts/Lato-Regular.woff2') format('woff2'),
+      url('../fonts/Lato-Regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('Lato-Regular'),
+      url('../fonts/Lato-Bold.woff2') format('woff2'),
+      url('../fonts/Lato-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playball';
+  src: local('Playball Regular'), local('Playball-Regular'),
+      url('../fonts/Playball-Regular.woff') format('woff2'),
+      url('../fonts/Playball-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;
@@ -8,15 +36,59 @@ body {
 * {
   box-sizing: border-box;
 }
-.container {
+/* .container {
   max-width: 1100px;
   margin: 0 auto;
-}
+} */
 ul, ol {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .header {
-  
+  box-shadow: 3px 11px 14px -6px rgb(34 60 80 / 18%);
+  margin-bottom: 30px;
+}
+.navbar-brand {
+  font-family: 'Playball';
+  font-size: 30px;
+}
+.nav-link {
+  font-family: 'Lato';
+  font-weight: bold;
+}
+.dropdown-item {
+  font-family: 'Lato';
+  font-weight: bold;
+}
+.d-block {
+  height: 300px;
+  /* overflow: hidden; */
+  /* object-fit: contain; */
+  width:100%;
+  object-fit:cover;
+}
+.card-box {
+  margin-top: 20px;
+}
+.card {
+  display: block;
+  width: 235px;
+  margin: 15px;
+  box-shadow: 1px 1px 8px 0px rgb(34 60 80 / 9%);
+}
+.card-img-top {
+  width: 100%;
+}
+.card__title {
+  display: block;
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+.card__block {
+  display: flex;
+  /* grid-template-columns: repeat(5, 1fr); */
 }

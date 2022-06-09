@@ -6,51 +6,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internet Shop</title>
   <link href="css/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <!-- <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Магия</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Ассортимент
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Летняя обувь</a></li>
-                <li><a class="dropdown-item" href="#">Осенняя обувь</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Зимняя обувь</a></li>
-                <li><a class="dropdown-item" href="#">Весенняя обувь</a></li>
-                <li><a class="dropdown-item" href="#">Демисезонная обувь</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Блог</a>
-              <!-- <a class="nav-link disabled">Блог</a> -->
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <header>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+          <input type="search" class="form-control" placeholder="Поиск..." aria-label="Search">
+        </form>
+        <div class="text-end text-decor">
+            <ul class="text-list">
+              <li class="nav-item dropdown first">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><i class="fa-solid fa-language"></i></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Кырг</a></li>
+                  <li><a class="dropdown-item" href="#">Рус</a></li>
+                  <li><a class="dropdown-item" href="#">Англ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item add-menu">
+                <a href="">
+                  <span class="icon--msg"><i class="fa-solid fa-basket-shopping"></i>
+                      <span class="msg">2</span>
+                  </span>
+                </a>
+                <div class="user__box_dropdown">
+                  <ul>
+                    <!-- <li>
+                      <div class="img__cart-add-left">
+                        <div class="img__cart-add">
+                          <img src="img/sveta.jpg" alt="sveta">
+                        </div>
+                        <p>
+                          <span class="cart-color">Кроссовки</span>
+                        </p>
+                        <p>
+                          <span class="cart-color">Размер: 34-41</span>
+                        </p>
+                        <p>                                               
+                          <span class="currency">(сом)</span>
+                          <span class="oprice">2500</span>
+                          <del>3000 (сом)</del>
+                        </p>
+                        <div class="trash">
+                          <a href="">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>  -->
+                  </ul>
+                  <div class="user__box_order">
+                      <div>
+                          <p>
+                              <span >Итого :</span>  
+                              <span class="total_cart">00 </span> 
+                          </p>
+                          <p>
+                              <span>Количество (шт.)</span>  
+                              <span class="cart_count">0</span> 
+                          </p>
+                      </div>
+                      <p class="user__box_order-delivery">
+                          <span>Доставка :</span>
+                          <a href="#"> Выбрать адрес доставки</a>
+                      </p>
+                      <p class="user__box_order-btn"> 
+                          <button type="submit">Заказать</button>
+                      </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
         </div>
       </div>
-    </nav>
   </header>
+  <nav class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-warning logo">"Магия"</a></li>
+          <li><a href="#" class="nav-link px-2 text-secondary">Главная</a></li>
+          <!-- <li><a href="#" class="nav-link px-2 text-white">Features</a></li> -->
+          <li><a href="#" class="nav-link px-2 text-white">Акции</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Доставка</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Контакты</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Каталог
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Летняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Осенняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Зимняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Весенняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Демисезонная обувь</a></li>
+            </ul>
+        </ul>
+
+        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+        </form> -->
+
+        <div class="text-end">
+          <a href="#popup">
+            <button type="button" class="btn btn-outline-light me-2">Войти</button>
+          </a>
+          <a href="#popup__registr">
+            <button type="button" class="btn btn-warning">Регистрация</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
   <section class="slider">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
       <div class="carousel-indicators">
@@ -62,21 +136,21 @@
         <div class="carousel-item active">
           <img src="img/banner3.jpg" class="d-block w-100" alt="banner3">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
+            <h3>Johnston & Murphy</h3>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/banner4.jpg" class="d-block w-100" alt="banner4">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
+            <h3>Johnston & Murphy</h3>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/banner5.jpg" class="d-block w-100" alt="banner5">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
+            <h3>Johnston & Murphy</h3>
             <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div>
@@ -92,58 +166,332 @@
     </div>
   </section>
   <section class="card-product">
-    <div class="container-fluid ">
+    <!-- <div class="container-xm-md-lg-xl-xxl"> -->
+    <div class="container">
       <p class="card-box">
         <span class="card__title">Летняя обувь</span>
       </p>
       <div class="card__block">
-        <div class="card">
-        <!-- <div class="card" style="width: 18rem;"> -->
-          <img src="img/botas.jpg" class="card-img-top" alt="botas">
+        <div class="swiper-slide">
+          <div class="slide__block-img">
+              <div class="slide-img__item">
+                  <a href="purchase.html" class="slide__link" target="_self">
+                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
+                      <div class="shildik">
+                          <span class="shildik-span">New</span>
+                          <!-- <span class="shildik-color"></span> -->
+                      </div>
+                      <p class="img__textd "><span>Босоножки</span></p>
+                      <div class="img__text">
+                          <span class="currency">$ </span> 
+                          <span class="oprice">120</span>
+                          <del>2500 сом</del>
+                      </div>
+                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
+                  </a>
+                  <a class="addBtn" href="#">Добавить в корзину</a>
+                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
+              </div>                            
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide__block-img">
+              <div class="slide-img__item">
+                  <a href="purchase.html" class="slide__link" target="_self">
+                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
+                      <div class="shildik">
+                          <span class="shildik-span">New</span>
+                          <!-- <span class="shildik-color"></span> -->
+                      </div>
+                      <p class="img__textd "><span>Босоножки</span></p>
+                      <div class="img__text">
+                          <span class="currency">$ </span> 
+                          <span class="oprice">120</span>
+                          <del>2500 сом</del>
+                      </div>
+                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
+                  </a>
+                  <a class="addBtn" href="#">Добавить в корзину</a>
+                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
+              </div>                            
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide__block-img">
+              <div class="slide-img__item">
+                  <a href="purchase.html" class="slide__link" target="_self">
+                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
+                      <div class="shildik">
+                          <span class="shildik-span">New</span>
+                          <!-- <span class="shildik-color"></span> -->
+                      </div>
+                      <p class="img__textd "><span>Босоножки</span></p>
+                      <div class="img__text">
+                          <span class="currency">$ </span> 
+                          <span class="oprice">120</span>
+                          <del>2500 сом</del>
+                      </div>
+                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
+                  </a>
+                  <a class="addBtn" href="#">Добавить в корзину</a>
+                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
+              </div>                            
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide__block-img">
+              <div class="slide-img__item">
+                  <a href="purchase.html" class="slide__link" target="_self">
+                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
+                      <div class="shildik">
+                          <span class="shildik-span">New</span>
+                          <!-- <span class="shildik-color"></span> -->
+                      </div>
+                      <p class="img__textd "><span>Босоножки</span></p>
+                      <div class="img__text">
+                          <span class="currency">$ </span> 
+                          <span class="oprice">120</span>
+                          <del>2500 сом</del>
+                      </div>
+                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
+                  </a>
+                  <a class="addBtn" href="#">Добавить в корзину</a>
+                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
+              </div>                            
+          </div>
+        </div>
+        <!-- <div class="card">
+          <img src="img/sveta.jpg" class="card-img-top imgProduct" alt="sveta">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Длбавить в корзину</a>
+            <h5 class="card-title">Босоножки</h5>
+            <div class="img__text">
+              <span class="oprice">120</span>
+              <span class="currency">(сом) </span> 
+              <del class="del">2500</del>
+              <span> (сом)</span>
+            </div>
+            <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
           </div>
         </div>
         <div class="card">
-          <img src="img/sveta.jpg" class="card-img-top" alt="sveta">
+          <img src="img/sveta.jpg" class="card-img-top imgProduct" alt="sveta">
+          <div class="shildik">
+            <span class="shildik-span shildik-sale">-35%</span>
+            <span class="shildik-decor shildik-color sale"></span>
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Длбавить в корзину</a>
+            <h5 class="card-title">Кеды</h5>
+            <div class="img__text">
+              <span class="oprice">120</span>
+              <span class="currency">(сом) </span> 
+              <del class="del">2500</del>
+              <span> (сом)</span>
+            </div>
+            <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
           </div>
         </div>
         <div class="card">
-          <img src="img/sveta1.jpg" class="card-img-top" alt="sveta1">
+          <img src="img/sveta1.jpg" class="card-img-top imgProduct" alt="sveta1">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Длбавить в корзину</a>
+            <h5 class="card-title">Туфли</h5>
+            <div class="img__text">
+              <span class="oprice">120</span>
+              <span class="currency">(сом) </span> 
+              <del class="del">2500</del>
+              <span> (сом)</span>
+            </div>
+            <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
           </div>
         </div>
         <div class="card">
-          <img src="img/sveta1.jpg" class="card-img-top" alt="sveta1">
+          <img src="img/sveta1.jpg" class="card-img-top imgProduct" alt="sveta1">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Длбавить в корзину</a>
+            <h5 class="card-title">Сапожки</h5>
+            <div class="img__text">
+              <span class="oprice">120</span>
+              <span class="currency">(сом) </span> 
+              <del class="del">2500</del>
+              <span> (сом)</span>
+            </div>
+            <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
           </div>
         </div>
         <div class="card">
-          <img src="img/sveta1.jpg" class="card-img-top" alt="sveta1">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Длбавить в корзину</a>
+          <img src="img/sveta1.jpg" class="card-img-top imgProduct" alt="sveta1">
+          <div class="shildik">
+            <span class="shildik-span">New</span>
+            <span class="shildik-color"></span>
           </div>
-        </div>
+          <div class="card-body">
+            <h5 class="card-title">Лоферы</h5>
+            <div class="img__text">
+              <span class="oprice">120</span>
+              <span class="currency">(сом) </span> 
+              <del class="del">2500</del>
+              <span>(сом)</span>
+            </div>
+            <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>
   <footer class="footer">
-    
+    <div class="container">
+      <div class="logo">
+          <h1 class="logo">"Магия"</h1>
+      </div>
+      <div class="footer__block">
+          <ul class="footer__list">
+              <span class="footer__title">Продавец</span>
+              <li><a href="#" class="footer__link">О нас</a></li>
+              <li><a href="#" class="footer__link">Контакты</a></li>
+              <li><a href="#" class="footer__link">Сертификаты от производителей</a></li>
+              <li><a href="#" class="footer__link">Наши партнеры</a></li>
+              <li><a href="#" class="footer__link">Вакансии</a></li>
+          </ul>
+          <ul class="footer__list">
+              <span class="footer__title">Услуги</span>
+              <li><a href="#" class="footer__link">Покупки в кредит</a></li>
+              <li><a href="#" class="footer__link">Покупка в рассрочку</a></li>
+              <li><a href="#" class="footer__link">Оптовый раздел</a></li>
+              <li><a href="#" class="footer__link">Прочие вопросы</a></li>
+          </ul>
+          <ul class="footer__list">
+              <span class="footer__title">Покупателю</span>
+              <li><a href="payment.html" class="footer__link">Оплата</a></li>
+              <li><a href="delivery.html" class="footer__link">Доставка</a></li>
+              <li><a href="refund.html" class="footer__link">Возврат</a></li>
+              <li><a href="#" class="footer__link">Акции и скидки</a></li>
+              <li><a href="#" class="footer__link">Отзывы и предложения</a></li>
+          </ul>
+          <ul class="footer__list">
+              <span class="footer__title">Быстрая связь</span>
+              <li><a href="tel:+996709308101" class="footer__link">тел: (312) 55 55 55<br>
+                      <span>пон - суб: 9 - 18</span>
+                  </a>
+              </li>
+              <li>
+                  <ul class="foot-icon__block">
+                      <li><a href="https://web.telegram.org/z/" target="_blank">
+                              <img src="img/icon.png" alt="" class="foot__icon">
+                          </a></li>
+                      <li><a href="https://vk.com/" target="_blank">
+                              <img src="img/icon2.png" alt="" class="foot__icon">
+                          </a></li>
+                      <li><a href="https://www.instagram.com/" target="_blank">
+                              <img src="img/icon3.png" alt="" class="foot__icon">
+                          </a></li>
+                      <li><a href="https://ru-ru.facebook.com/" target="_blank">
+                              <img src="img/icon4.png" alt="" class="foot__icon">
+                          </a>
+                      </li>
+                  </ul>
+                  <div><a href="#" class="footer__link">Способы оплаты</a>
+                      <div class="icon-card">
+                          <a href=""><img src="img/visa.png" alt="" class="foot__icon-card"></a>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
   </footer>
+  <section class="footer__bottom">
+    <div class="footer__box">
+        <span><i class="fa fa-copyright"></i></span>
+        <span class="f-slogan">интернет - магазин 2021 - 2022</span>
+    </div>
+  </section>
+  <div id="popup" class="popup">
+    <a href="#header" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="reg__link"></a>
+            <form class="form">
+                <div class="popup__title">Авторизация</div>
+                <label for="lab_1" class="f__label">Логин</label>
+                <div class="form__input">
+                    <input type="password" class="f__input" id="lab_1" title="Введите логин" required>
+                </div>
+                <label for="lab_2" class="f__label">Пароль</label>
+                <div class="form__input">
+                    <input type="password" class="f__input" id="lab_2" title="Введите пароль" required>
+                </div>
+                <button class="form__btn" type="submit">Войти</button>
+            </form>
+            <div class="password__link">
+                <a href="#popup__registr" class="sign__up">Регистрация</a><br>
+                <a href="#popup__parol" class="sign__up sign__up-decor">Забыли пароль ?</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="popup__registr" id="popup__registr">
+    <a href="#header" class="popup__area"></a>
+    <div class="p-registr__body">
+        <div class="p-registr__content">
+            <a href="#header" class="reg__link"></a>
+            <form action="#" class="form-registr">
+                <label for="lab_3" class="f__label label-d">Логин</label>
+                <div class="form__input">
+                    <input type="text" class="f__input f-decor" id="lab_3" title="Введите логин" required>
+                </div>
+                <label for="lab_4" class="f__label label-d">Email</label>
+                <div class="form__input">
+                    <input type="email" class="f__input f-decor" id="lab_4" title="Введите email" required>
+                </div>
+                <label for="lab_5" class="f__label label-d">Пароль</label>
+                <div class="form__input">
+                    <input type="password" class="f__input f-decor" id="lab_5" title="Введите пароль" required>
+                </div>
+                <label for="lab_6" class="f__label label-d">Повторить пароль</label>
+                <div class="form__input">
+                    <input type="password" class="f__input f-decor" id="lab_6" title="Повторите пароль" required>
+                </div>
+                <button class="form__btn reg__btn" type="submit" id="lamp">Я все заполнил</button>
+            </form>
+        </div>
+    </div>
+  </div>
+  <div class="popup__registr" id="popup__parol">
+    <a href="#header" class="popup__area"></a>
+    <div class="p-registr__body">
+        <div class="p-registr__content">
+            <a href="#header" class="reg__link"></a>
+            <form action="#" class="form-registr">
+                <h3 class="parol__title">Восстановление пароля :</h3>
+                <label for="lab_7" class="f__label label-d">* Ваш Email:</label>
+                <div class="form__input">
+                    <input type="email" class="f__input f-decor" id="lab_7" title="Введите email" required>
+                </div>
+                <button class="form__btn reg__btn" type="submit">Выслать пароль</button>
+            </form>
+        </div>
+    </div>
+  </div>
+  <div class="popup__registr" id="lamp">
+    <a href="#header" class="popup__area"></a>
+    <div class="p-registr__body">
+        <div class="p-registr__content">
+            <img src="img/success.png" alt="">
+            <p class="p__text">Вы зарегистрировались, для активации аккаунта
+                зайдите на почту.
+            </p>
+        </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <!-- <script src="js/add_to_cart.js"></script> -->
   <script src="css/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -4,9 +4,31 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .swiper-slide {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .footer__block {
+      flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 553px) {
   .card {
     width: 100%;
+    margin: 10px 60px;
+  }
+  .card-body {
+    display: block;
+    text-align: center;
+  }
+  .footer {
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .card {
+    width: 100%;
+    margin: 10px;
   }
 }

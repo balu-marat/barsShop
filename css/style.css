@@ -39,10 +39,6 @@ body {
   box-sizing: border-box;
 }
 
-/* .container {
-  max-width: 1100px;
-  margin: 0 auto;
-} */
 ul,
 ol {
   list-style: none;
@@ -53,20 +49,9 @@ ol {
 a {
   text-decoration: none;
 }
-
-/* .header {
-  background-color: #f8f9fa;
-  box-shadow: 3px 11px 14px -6px rgb(34 60 80 / 18%);
-  margin-bottom: 30px;
+.header {
+  background: aliceblue;
 }
-.navbar-brand {
-  font-family: 'Playball';
-  font-size: 30px;
-}
-.nav-link {
-  font-family: 'Lato';
-  font-weight: bold;
-} */
 .logo {
   font-size: 30px;
   line-height: 16px;
@@ -92,7 +77,9 @@ a {
   font-size: 11px;
   border-radius: 15px;
 }
-
+.search {
+  display: flex;
+}
 .nav-item {
   position: relative;
 }
@@ -108,7 +95,7 @@ a {
   box-shadow: 3px 11px 14px -6px rgba(34, 60, 80, 0.18);
   /* visibility: hidden;
   opacity: 0; */
-  /* display: none; */
+  display: none;
 }
 
 .add-menu:hover>.user__box_dropdown {
@@ -185,13 +172,17 @@ a {
   margin-right: 15px;
 }
 
-
+.navHide {
+  display: none;
+}
 
 nav {
   margin-bottom: 30px;
   box-shadow: 3px 11px 14px -6px rgb(34 60 80 / 18%);
 }
-
+.headerTopBox {
+  display: none;
+}
 .d-block {
   height: 300px;
   /* overflow: hidden; */
@@ -604,23 +595,19 @@ nav {
   background: white;
 }
 
+.valuta-box {
+  margin-top: 20px;
+}
                   /* card */
 
-.swiper-slide {
 
-} 
 
-/* .slide__block-img {
-  display: flex;
-  justify-content: center;
-} */
-
-.slide-img__item {
+.card__item {
   padding: 10px 15px;
   box-shadow: 1px 1px 8px 0px rgb(34 60 80 / 9%);
 }
 
-.slide__link {
+.card__link {
   position: relative;
 }
 

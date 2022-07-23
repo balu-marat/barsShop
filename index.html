@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-  <header>
-    <div class="px-3 py-2 border-bottom mb-3">
-      <div class="container d-flex flex-wrap justify-content-center">
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-          <input type="search" class="form-control" placeholder="Поиск..." aria-label="Search">
+  <header class="header">
+    <div class="px-3 py-2 border-bottom mb-3 topHeader">
+      <div class="container d-flex flex-wrap">
+        <form action="?search=#" class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto search formSearch" role="search" method="GET">
+          <input class="form-control me-2" type="search" placeholder="Поиск..." name="search">
+          <button class="btn btn-outline-success " id="btnSearch" type="submit">Ok</button>
         </form>
-        <div class="text-end text-decor">
+        <div class="text-end text-decor hraderTopBox">
             <ul class="text-list">
               <li class="nav-item dropdown first">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,14 +87,14 @@
             </ul>
         </div>
       </div>
+    </div>
   </header>
-  <nav class="p-3 bg-dark text-white">
+  <nav class="p-3 bg-dark text-white navMain">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-warning logo">"Магия"</a></li>
           <li><a href="#" class="nav-link px-2 text-secondary">Главная</a></li>
-          <!-- <li><a href="#" class="nav-link px-2 text-white">Features</a></li> -->
           <li><a href="#" class="nav-link px-2 text-white">Акции</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Доставка</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Контакты</a></li>
@@ -109,11 +110,6 @@
               <li><a class="dropdown-item" href="#">Демисезонная обувь</a></li>
             </ul>
         </ul>
-
-        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
-        </form> -->
-
         <div class="text-end">
           <a href="#popup">
             <button type="button" class="btn btn-outline-light me-2">Войти</button>
@@ -125,6 +121,120 @@
       </div>
     </div>
   </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navHide" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">"Магия"</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white">Контакты</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Летняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Осенняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Зимняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Весенняя обувь</a></li>
+              <li><a class="dropdown-item" href="#">Демисезонная обувь</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form action="?search=#" class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto search" role="search" method="GET">
+          <input class="form-control me-2" type="search" placeholder="Поиск..." name="search">
+          <button class="btn btn-outline-success " id="btnSearch" type="submit">Ok</button>
+        </form>
+        <div class="text-end signBox">
+          <a href="#popup">
+            <button type="button" class="btn btn-outline-light me-2">Войти</button>
+          </a>
+          <a href="#popup__registr">
+            <button type="button" class="btn btn-warning">Регистрация</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="text-end text-decor headerTopBox">
+    <ul class="text-list">
+      <li class="nav-item dropdown first">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span><i class="fa-solid fa-language"></i></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Кырг</a></li>
+          <li><a class="dropdown-item" href="#">Рус</a></li>
+          <li><a class="dropdown-item" href="#">Англ</a></li>
+        </ul>
+      </li>
+      <li class="nav-item add-menu">
+        <a href="">
+          <span class="icon--msg"><i class="fa-solid fa-basket-shopping"></i>
+              <span class="msg">2</span>
+          </span>
+        </a>
+        <div class="user__box_dropdown">
+          <ul>
+            <!-- <li>
+              <div class="img__cart-add-left">
+                <div class="img__cart-add">
+                  <img src="img/sveta.jpg" alt="sveta">
+                </div>
+                <p>
+                  <span class="cart-color">Кроссовки</span>
+                </p>
+                <p>
+                  <span class="cart-color">Размер: 34-41</span>
+                </p>
+                <p>                                               
+                  <span class="currency">(сом)</span>
+                  <span class="oprice">2500</span>
+                  <del>3000 (сом)</del>
+                </p>
+                <div class="trash">
+                  <a href="">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </a>
+                </div>
+              </div>
+            </li>  -->
+          </ul>
+          <div class="user__box_order">
+              <div>
+                  <p>
+                      <span >Итого :</span>  
+                      <span class="total_cart">00 </span> 
+                  </p>
+                  <p>
+                      <span>Количество (шт.)</span>  
+                      <span class="cart_count">0</span> 
+                  </p>
+              </div>
+              <p class="user__box_order-delivery">
+                  <span>Доставка :</span>
+                  <a href="#"> Выбрать адрес доставки</a>
+              </p>
+              <p class="user__box_order-btn"> 
+                  <button type="submit">Заказать</button>
+              </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
   <section class="slider">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
       <div class="carousel-indicators">
@@ -166,182 +276,83 @@
     </div>
   </section>
   <section class="card-product">
-    <!-- <div class="container-xm-md-lg-xl-xxl"> -->
     <div class="container">
+      <div class="valuta-box">
+        <p>
+          <input type="text" id="som" placeholder="Сом">
+        </p>
+        <p>
+          <input type="text" id="usd" placeholder="Usd">
+        </p>
+      </div>
       <p class="card-box">
         <span class="card__title">Летняя обувь</span>
       </p>
       <div class="card__block">
-        <div class="swiper-slide">
-          <div class="slide__block-img">
-              <div class="slide-img__item">
-                  <a href="purchase.html" class="slide__link" target="_self">
-                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
-                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
-                      <div class="shildik">
-                          <span class="shildik-span">New</span>
-                          <!-- <span class="shildik-color"></span> -->
-                      </div>
-                      <p class="img__textd "><span>Босоножки</span></p>
-                      <div class="img__text">
-                          <span class="currency">$ </span> 
-                          <span class="oprice">120</span>
-                          <del>2500 сом</del>
-                      </div>
-                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
-                  </a>
-                  <a class="addBtn" href="#">Добавить в корзину</a>
-                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
-              </div>                            
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide__block-img">
-              <div class="slide-img__item">
-                  <a href="purchase.html" class="slide__link" target="_self">
-                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
-                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
-                      <div class="shildik">
-                          <span class="shildik-span">New</span>
-                          <!-- <span class="shildik-color"></span> -->
-                      </div>
-                      <p class="img__textd "><span>Босоножки</span></p>
-                      <div class="img__text">
-                          <span class="currency">$ </span> 
-                          <span class="oprice">120</span>
-                          <del>2500 сом</del>
-                      </div>
-                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
-                  </a>
-                  <a class="addBtn" href="#">Добавить в корзину</a>
-                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
-              </div>                            
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide__block-img">
-              <div class="slide-img__item">
-                  <a href="purchase.html" class="slide__link" target="_self">
-                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
-                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
-                      <div class="shildik">
-                          <span class="shildik-span">New</span>
-                          <!-- <span class="shildik-color"></span> -->
-                      </div>
-                      <p class="img__textd "><span>Босоножки</span></p>
-                      <div class="img__text">
-                          <span class="currency">$ </span> 
-                          <span class="oprice">120</span>
-                          <del>2500 сом</del>
-                      </div>
-                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
-                  </a>
-                  <a class="addBtn" href="#">Добавить в корзину</a>
-                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
-              </div>                            
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide__block-img">
-              <div class="slide-img__item">
-                  <a href="purchase.html" class="slide__link" target="_self">
-                      <img src="img/sveta.jpg" alt="sveta" class="img__slide">
-                      <!-- <button class="sw__btn">Быстрый просмотр</button> -->
-                      <div class="shildik">
-                          <span class="shildik-span">New</span>
-                          <!-- <span class="shildik-color"></span> -->
-                      </div>
-                      <p class="img__textd "><span>Босоножки</span></p>
-                      <div class="img__text">
-                          <span class="currency">$ </span> 
-                          <span class="oprice">120</span>
-                          <del>2500 сом</del>
-                      </div>
-                      <div class="img__textS"><span >Размер: 34 - 41</span></div>
-                  </a>
-                  <a class="addBtn" href="#">Добавить в корзину</a>
-                  <!-- <button class="addBtn" type="submit">Добавить в корзину</button> -->
-              </div>                            
-          </div>
-        </div>
-        <!-- <div class="card">
-          <img src="img/sveta.jpg" class="card-img-top imgProduct" alt="sveta">
-          <div class="card-body">
-            <h5 class="card-title">Босоножки</h5>
-            <div class="img__text">
-              <span class="oprice">120</span>
-              <span class="currency">(сом) </span> 
-              <del class="del">2500</del>
-              <span> (сом)</span>
-            </div>
-            <div class="img__textS"><span >Размер: 34 - 41</span></div>
-            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/sveta.jpg" class="card-img-top imgProduct" alt="sveta">
-          <div class="shildik">
-            <span class="shildik-span shildik-sale">-35%</span>
-            <span class="shildik-decor shildik-color sale"></span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Кеды</h5>
-            <div class="img__text">
-              <span class="oprice">120</span>
-              <span class="currency">(сом) </span> 
-              <del class="del">2500</del>
-              <span> (сом)</span>
-            </div>
-            <div class="img__textS"><span >Размер: 34 - 41</span></div>
-            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/sveta1.jpg" class="card-img-top imgProduct" alt="sveta1">
-          <div class="card-body">
-            <h5 class="card-title">Туфли</h5>
-            <div class="img__text">
-              <span class="oprice">120</span>
-              <span class="currency">(сом) </span> 
-              <del class="del">2500</del>
-              <span> (сом)</span>
-            </div>
-            <div class="img__textS"><span >Размер: 34 - 41</span></div>
-            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/sveta1.jpg" class="card-img-top imgProduct" alt="sveta1">
-          <div class="card-body">
-            <h5 class="card-title">Сапожки</h5>
-            <div class="img__text">
-              <span class="oprice">120</span>
-              <span class="currency">(сом) </span> 
-              <del class="del">2500</del>
-              <span> (сом)</span>
-            </div>
-            <div class="img__textS"><span >Размер: 34 - 41</span></div>
-            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/sveta1.jpg" class="card-img-top imgProduct" alt="sveta1">
-          <div class="shildik">
-            <span class="shildik-span">New</span>
-            <span class="shildik-color"></span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Лоферы</h5>
-            <div class="img__text">
-              <span class="oprice">120</span>
-              <span class="currency">(сом) </span> 
-              <del class="del">2500</del>
-              <span>(сом)</span>
-            </div>
-            <div class="img__textS"><span >Размер: 34 - 41</span></div>
-            <a href="#" class="btn btn-primary btnAdd">Длбавить в корзину</a>
-          </div>
-        </div> -->
+        <div class="card__item">
+            <a href="#" class="card__link">
+                <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                <div class="shildik">
+                    <span class="shildik-span">New</span>
+                </div>
+                <p class="img__textd "><span>Босоножки</span></p>
+                <div class="img__text">
+                    <span class="currency">$ </span> 
+                    <span class="oprice">100</span>
+                    <del>2500 сом</del>
+                </div>
+                <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            </a>
+            <a class="addBtn" href="#">Добавить в корзину</a>
+        </div>                            
+        <div class="card__item">
+            <a href="#" class="card__link">
+                <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                <div class="shildik">
+                    <span class="shildik-span">New</span>
+                </div>
+                <p class="img__textd "><span>Босоножки</span></p>
+                <div class="img__text">
+                    <span class="currency">$ </span> 
+                    <span class="oprice">200</span>
+                    <del>2500 сом</del>
+                </div>
+                <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            </a>
+            <a class="addBtn" href="#">Добавить в корзину</a>
+        </div>                            
+        <div class="card__item">
+            <a href="#" class="card__link">
+                <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                <div class="shildik">
+                    <span class="shildik-span">New</span>
+                </div>
+                <p class="img__textd "><span>Босоножки</span></p>
+                <div class="img__text">
+                    <span class="currency">$ </span> 
+                    <span class="oprice">300</span>
+                    <del>2500 сом</del>
+                </div>
+                <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            </a>
+            <a class="addBtn" href="#">Добавить в корзину</a>
+        </div>                            
+        <div class="card__item">
+            <a href="#" class="card__link">
+                <img src="img/sveta.jpg" alt="sveta" class="img__slide">
+                <div class="shildik">
+                    <span class="shildik-span">New</span>
+                </div>
+                <p class="img__textd "><span>Босоножки</span></p>
+                <div class="img__text">
+                    <span class="currency">$ </span> 
+                    <span class="oprice">400</span>
+                    <del>2500 сом</del>
+                </div>
+                <div class="img__textS"><span >Размер: 34 - 41</span></div>
+            </a>
+            <a class="addBtn" href="#">Добавить в корзину</a>
+        </div>                            
       </div>
     </div>
   </section>
@@ -490,8 +501,10 @@
         </div>
     </div>
   </div>
+  <script src="css/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
   <script src="js/script.js"></script>
   <!-- <script src="js/add_to_cart.js"></script> -->
-  <script src="css/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+  <script src="js/valuta.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>

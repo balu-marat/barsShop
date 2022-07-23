@@ -4,8 +4,33 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .swiper-slide {
+  .card__item {
     margin: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .topHeader {
+    display: none;
+  }
+  .headerTopBox {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .signBox {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+  .navMain {
+    display: none;
+  }
+  .navHide {
+    display: block;
+  }
+  .text-decor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 @media screen and (max-width: 980px) {
@@ -18,10 +43,10 @@
     width: 100%;
     margin: 10px 60px;
   }
-  .card-body {
+  /* .card-body {
     display: block;
     text-align: center;
-  }
+  } */
   .footer {
     padding: 15px 10px;
   }
